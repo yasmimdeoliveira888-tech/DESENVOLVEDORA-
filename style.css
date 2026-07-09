@@ -1,82 +1,103 @@
-/* Configuração geral */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* Corpo da página */
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    font-family: "Times New Roman", serif;
+    background:#ececec;
 }
 
-/* Cabeçalho */
-header{
-    background-color: #0d6efd;
-    color: white;
-    text-align: center;
-    padding: 30px;
+.curriculo{
+    width:900px;
+    margin:30px auto;
+    background:#fff;
+    padding:40px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Títulos */
+h1{
+    text-align:center;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+hr{
+    margin:20px 0;
+    border:1px solid #cfcfcf;
+}
+
+.dados{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+.foto img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border:1px solid #999;
+}
+
+.informacoes{
+    flex:1;
+}
+
+.informacoes h2{
+    font-size:34px;
+    margin-bottom:20px;
+    text-decoration:underline;
+}
+
+.informacoes p{
+    font-size:18px;
+    margin:8px 0;
+}
+
 h2{
-    color: #0d6efd;
-    margin-bottom: 15px;
+    font-size:30px;
+    margin-top:25px;
+    margin-bottom:15px;
 }
 
-/* Seções */
-section{
-    background-color: white;
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-/* Foto */
-img{
-    display: block;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin: 20px auto;
-    border: 4px solid #0d6efd;
-}
-
-/* Listas */
 ul{
-    margin-left: 20px;
+    margin-left:30px;
 }
 
 li{
-    margin-bottom: 8px;
+    font-size:18px;
+    margin-bottom:10px;
+    line-height:1.6;
 }
 
-/* Botão */
-a{
-    display: inline-block;
-    margin-top: 15px;
-    background-color: #0d6efd;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: 0.3s;
+strong{
+    font-weight:bold;
 }
 
-a:hover{
-    background-color: #084298;
+@media(max-width:900px){
+
+.curriculo{
+    width:95%;
+    padding:20px;
 }
 
-/* Rodapé */
-footer{
-    background-color: #0d6efd;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+.dados{
+    flex-direction:column;
+    text-align:center;
+}
+
+.foto img{
+    width:180px;
+    height:180px;
+}
+
+.informacoes h2{
+    font-size:28px;
+}
+
+h2{
+    font-size:26px;
+}
 }
